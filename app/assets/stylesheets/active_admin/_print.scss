@@ -4,12 +4,6 @@
 $primary-color: black;
 $text-color: black;
 
-// Normalize
-@import "./normalize";
-
-// Partials
-@import "./typography";
-
 body {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 150%;
