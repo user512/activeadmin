@@ -54,7 +54,10 @@ jobs:
         run: bin/rake lint
 
       - name: Run bug report template
-        run: ACTIVE_ADMIN_PATH=. ruby tasks/bug_report_template.rb
+        run: |
+          gem -v
+          bundle -v
+          ACTIVE_ADMIN_PATH=. ruby tasks/bug_report_template.rb
 
       - name: Format coverage
         run: |
