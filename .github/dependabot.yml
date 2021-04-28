@@ -1,0 +1,120 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  versioning-strategy: increase-if-necessary
+  ignore:
+  - dependency-name: rspec-rails
+    versions:
+    - 4.1.0
+    - 4.1.1
+  - dependency-name: parallel_tests
+    versions:
+    - 3.5.1
+  - dependency-name: database_cleaner
+    versions:
+    - 1.99.0
+  - dependency-name: capybara
+    versions:
+    - 3.35.2
+- package-ecosystem: bundler
+  directory: "/gemfiles/rails_52"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  versioning-strategy: increase-if-necessary
+  ignore:
+  - dependency-name: rspec-rails
+    versions:
+    - 4.1.0
+    - 4.1.1
+  - dependency-name: parallel_tests
+    versions:
+    - 3.5.1
+- package-ecosystem: bundler
+  directory: "/docs"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  versioning-strategy: increase-if-necessary
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  versioning-strategy: increase-if-necessary
+  ignore:
+  - dependency-name: rollup
+    versions:
+    - 2.38.2
+    - 2.40.0
+    - 2.41.0
+    - 2.43.1
+  - dependency-name: "@babel/preset-env"
+    versions:
+    - 7.12.13
+    - 7.12.17
+    - 7.13.8
+    - 7.13.9
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.12.13
+    - 7.12.16
+    - 7.12.17
+    - 7.13.0
+    - 7.13.1
+    - 7.13.8
+- package-ecosystem: bundler
+  directory: "/gemfiles/rails_60"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  versioning-strategy: increase-if-necessary
+  ignore:
+  - dependency-name: rspec-rails
+    versions:
+    - 4.1.0
+    - 4.1.1
+  - dependency-name: parallel_tests
+    versions:
+    - 3.5.1
+  - dependency-name: database_cleaner
+    versions:
+    - 1.99.0
+  - dependency-name: capybara
+    versions:
+    - 3.35.2
+- package-ecosystem: bundler
+  directory: "/gemfiles/rails_61_turbolinks"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  versioning-strategy: increase-if-necessary
+  ignore:
+  - dependency-name: rspec-rails
+    versions:
+    - 4.1.0
+    - 4.1.1
+  - dependency-name: parallel_tests
+    versions:
+    - 3.5.1
+  - dependency-name: database_cleaner
+    versions:
+    - 1.99.0
+- package-ecosystem: bundler
+  directory: "/gemfiles/rails_61_webpacker"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  versioning-strategy: increase-if-necessary
+  ignore:
+  - dependency-name: rspec-rails
+    versions:
+    - 4.1.0
+    - 4.1.1
+  - dependency-name: parallel_tests
+    versions:
+    - 3.5.1
