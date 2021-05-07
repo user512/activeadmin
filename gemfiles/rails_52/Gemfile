@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+gem "inherited_resources", github: "user512/inherited_resources", branch: "rails-5-2-6"
+gemspec
+
 group :development, :test do
   gem "rake"
   gem "pry" # Easily debug from your console with `binding.pry`

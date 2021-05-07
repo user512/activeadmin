@@ -9,6 +9,17 @@ GIT
       jdbc-sqlite3 (~> 3.8, < 3.30)
     jdbc-sqlite3 (3.28.0)
 
+GIT
+  remote: https://github.com/user512/inherited_resources.git
+  revision: a4686b03f9dd156fd12eb526f24bd864ad462616
+  branch: rails-5-2-6
+  specs:
+    inherited_resources (1.12.0)
+      actionpack (>= 5.2, < 6.2)
+      has_scope (~> 0.6)
+      railties (>= 5.2, < 6.2)
+      responders (>= 2, < 4)
+
 PATH
   remote: .
   specs:
@@ -16,7 +27,7 @@ PATH
       arbre (~> 1.2, >= 1.2.1)
       formtastic (>= 3.1, < 5.0)
       formtastic_i18n (~> 0.4)
-      inherited_resources (~> 1.7)
+      inherited_resources
       jquery-rails (~> 4.2)
       kaminari (~> 1.0, >= 1.2.1)
       railties (>= 5.2, < 6.2)
@@ -189,9 +200,9 @@ GEM
     formtastic_i18n (0.6.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    has_scope (0.7.2)
-      actionpack (>= 4.1)
-      activesupport (>= 4.1)
+    has_scope (0.8.0)
+      actionpack (>= 5.2)
+      activesupport (>= 5.2)
     highline (2.0.3)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
@@ -207,11 +218,6 @@ GEM
       rails-i18n
       rainbow (>= 2.2.2, < 4.0)
       terminal-table (>= 1.5.1)
-    inherited_resources (1.12.0)
-      actionpack (>= 5.2, < 6.2)
-      has_scope (~> 0.6)
-      railties (>= 5.2, < 6.2)
-      responders (>= 2, < 4)
     iso (0.2.2)
       i18n
     jasmine (2.99.0)
@@ -466,6 +472,7 @@ DEPENDENCIES
   formtastic (~> 4.0.rc1)
   i18n-spec
   i18n-tasks
+  inherited_resources!
   jasmine
   jasmine-core (= 2.99.2)
   jruby-openssl (~> 0.10.5)
